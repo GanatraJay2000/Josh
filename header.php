@@ -11,7 +11,7 @@ wp_head();
 </head>
 
 <body>
-    <div class="col px-5 border">
+    <div class="col pr-1 pl-5 border">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <a class="navbar-brand" href="#">
                 <img src="http://localhost/josh/wp-content/uploads/2020/10/josh-logo.png" alt="JOSH Logo" loading="lazy">Josh Foundation

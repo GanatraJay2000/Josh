@@ -3,10 +3,24 @@ Theme Name: Josh
 Version: 1.0
 Author: Jay Ganatra
 */
+/* variables */
+:root{
+    --red:#ee120e;
+    --footer-black: #353132;
+    --footer-light-black: #4D4D4D;
+}
+/* variables */
 
 * {    
     font-family: "PT Serif", "serif";
 }
+
+
+/* 
+**********************
+        NAVBAR 
+**********************
+*/
 nav.navbar{
     height:15vh;
 }
@@ -23,13 +37,19 @@ font-size: clamp(1em, 36px, 40px);
 }
 
 .nav-item.contact-us{
-    background-color:red;
+    background-color:var(--red);
     padding:0px 20px;
     border-radius:20px;
     margin-left:12px;
 }
 .nav-item.contact-us>a{
     color:white !important;
+}
+.nav-item.contact-us.active>a>span{
+    position: relative;
+}
+.nav-item.contact-us.active>a>span::after{
+    display:none;    
 }
 
 .nav-item.active>a>span{
@@ -57,3 +77,147 @@ font-size: clamp(1em, 36px, 40px);
     display:none;
     content: '';    
 }
+/* 
+**********************
+        NAVBAR 
+**********************
+*/
+
+/* Body */
+
+/* Body */
+
+/* 
+**********************
+        Footer
+**********************
+*/
+
+
+.footer{
+    height:97vh;
+    width:100vw;
+    max-width: 100%;    
+}
+.footer .kids_images{
+    background-color:rgb(74, 73, 133);
+    width:100%;
+    height:32vh;
+    display:grid;    
+    grid-template-columns: repeat(6, 1fr);
+}
+.footer .kids_images>div{        
+    background-size: cover;    
+    background-repeat: no-repeat;    
+}
+.footer .kids_images>div:nth-child(1){
+    background-image: url('https://images.unsplash.com/photo-1584441692124-ff957d6e7f7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=830&q=80');
+}
+.footer .kids_images>div:nth-child(2){
+    background-image: url('https://images.unsplash.com/photo-1558424871-c0cc31dea15d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=793&q=80');
+}
+.footer .kids_images>div:nth-child(3){
+    background-image: url('https://images.unsplash.com/photo-1598188734327-54d887ce6514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80');
+}
+.footer .kids_images>div:nth-child(4){
+    background-image: url('https://images.unsplash.com/photo-1533483595632-c5f0e57a1936?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');
+}
+.footer .kids_images>div:nth-child(5){
+    background-image: url('https://images.unsplash.com/photo-1486020425824-a3da4762c3ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=797&q=80');
+}
+.footer .kids_images>div:nth-child(6){
+    background-image: url('https://images.unsplash.com/photo-1485423036251-8b2a2909899f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80');
+}
+.footer .main{
+    background-color:var(--footer-black);
+   color:white;
+    height:61vh;
+}
+.footer .main .content{
+    width:95%;
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer .main .content>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+        height:100%; 
+}
+
+.footer .main .content .social{
+ flex-direction:column;   
+}
+.footer .main .content .social .josh-logo{
+height:150px;
+width:150px;
+margin-bottom:10px;
+}
+.footer .main .content .social .social_links{    
+    display: flex;
+    color:red;
+    padding:10px 50px;
+}
+.footer .main .content .social .social_links i{
+    background-color: var(--footer-light-black);    
+    height:40px;
+    width:40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.footer .main .content .contact>div{
+    margin-left:20%;
+}
+.footer .main .content .contact div div{
+    font-family: "PT Sans Bold", sans-serif !important;
+    font-size:18px;
+    letter-spacing: 1.1px;
+    margin-bottom:15px;
+}
+.footer .main .content .contact div h1{
+    font-family: "PT Sans Bold", sans-serif !important;
+    font-weight: 900;
+    font-size:48px;
+    margin-bottom:20px;
+}
+.footer .main .content .contact div i{
+    font-size: 30px;
+    transform: translateY(10%);
+}
+.footer .main .content .map{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .main .content .map iframe{
+ width:70%;
+ height:70%;
+}
+
+
+
+
+.footer .copyrights{
+    background-color:var(--footer-light-black);
+    width:100%;
+    height:4vh;
+}
+
+
+
+
+
+
+
+/* 
+**********************
+        Footer
+**********************
+*/
