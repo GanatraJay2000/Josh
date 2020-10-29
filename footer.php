@@ -38,7 +38,12 @@
             </div>
         </div>
     </div>
-    <div class="copyrights"></div>
+    <div class="copyrights">
+        <div>
+            <div>Copyright &copy; 2020 Josh Foundation</div>
+            <div>Designed by Jay Ganatra</div>
+        </div>
+    </div>
 </div>
 
 </body>
