@@ -8,6 +8,9 @@
         <div></div>
     </div>
     <div class="main">
+        <div class="back-to-top">
+            <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
         <div class="content">
             <div class="social">
                 <img class="josh-logo" src="http://localhost/josh/wp-content/uploads/2020/10/josh-logo.png" alt="Josh Logo">
