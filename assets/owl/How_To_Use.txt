@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../vendors/owl_carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="../vendors/owl_carousel/owl.theme.default.min.css" class="css">
+
+
+<div class="owl-carousel owl-theme blog-post">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+
+
+//<div class="owl-navigation">
+//	<span class="owl-nav-prev"><i class=" fa fa-long-arrow-alt-left"></i></span>
+//	<span class="owl-nav-next"><i class=" fa fa-long-arrow-alt-right"></i></span>
+//</div>
+
+
+<script src="../vendors/js/ajaxJquery.min.js"></script>
+<script src="../vendors/owl_carousel/owl.carousel.min.js"></script>
+<script>
+	$('.owl-carousel').owlCarousel({
+	        loop: true,
+        	autoplay: false,
+        	autoplayTimeout: 3000,
+        	dots: false,
+        	nav: true,
+        	//navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+        	responsive: responsive
+    	});
+</scritp>
