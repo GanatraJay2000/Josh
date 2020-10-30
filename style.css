@@ -28,7 +28,7 @@ nav.navbar{
    background-color: #fff;
 }
 .navbar-brand>img{
-    height:75px;
+    height:clamp(50px, 75px, 75px);
     margin-right:20px;    
 }
 .navbar-brand{
