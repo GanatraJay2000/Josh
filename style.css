@@ -25,10 +25,7 @@ html {
 */
 nav.navbar{
     height:15vh;
-    /* background-color: #00000066 !important;
-    position: absolute;
-    z-index: 100;
-    width: 100%; */
+   background-color: #fff;
 }
 .navbar-brand>img{
     height:75px;

@@ -13,7 +13,7 @@
         </div>
         <div class="content">
             <div class="social">
-                <img class="josh-logo" src="http://localhost/josh/wp-content/uploads/2020/10/josh-logo.png" alt="Josh Logo">
+                <img class="josh-logo" src="https://josh.mcubeinfosys.com/wp-content/uploads/2020/10/josh-logo.png" alt="Josh Logo">
                 <h2 class="josh-title"><b>JOSH FOUNDATION</b></h2>
                 <div class="social_links">
                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
