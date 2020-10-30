@@ -11,7 +11,7 @@ Author: Jay Ganatra
 }
 /* variables */
 
-* {    
+*:not(i) {    
     font-family: "PT Serif", "serif";
 }
 html {
@@ -25,6 +25,10 @@ html {
 */
 nav.navbar{
     height:15vh;
+    /* background-color: #00000066 !important;
+    position: absolute;
+    z-index: 100;
+    width: 100%; */
 }
 .navbar-brand>img{
     height:75px;
@@ -175,9 +179,11 @@ width:150px;
 margin-bottom:10px;
 }
 .footer .main .content .social .social_links{    
-    display: flex;
-    color:red;
+    display: flex;    
     padding:10px 50px;
+}
+.footer .main .content .social .social_links a{    
+    text-decoration: none;
 }
 .footer .main .content .social .social_links i{
     background-color: var(--footer-light-black);    
@@ -189,15 +195,23 @@ margin-bottom:10px;
     color:white;
     border-radius: 50%;
     margin: 0 5px;
+    transition: ease-in 200ms;    
+}
+.footer .main .content .social .social_links i:hover{
+    /* color: var(--footer-light-black);        */
+    background-color:var(--red);    
 }
 
+.footer .main .content .contact div *:not(i){
+    font-size:18px;
+    letter-spacing: 1.1px;
+    color:white;
+    font-family: "PT Sans Bold", sans-serif !important;
+}
 .footer .main .content .contact>div{
     margin-left:20%;
 }
 .footer .main .content .contact div div{
-    font-family: "PT Sans Bold", sans-serif !important;
-    font-size:18px;
-    letter-spacing: 1.1px;
     margin-bottom:15px;
 }
 .footer .main .content .contact div h1{

@@ -32,7 +32,7 @@
                     </div>
                     <div>
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        devangi.dalaal@yahoo.in
+                        <a href="mailto:devangi.dalaal@yahoo.in?Subject=Contected%20from%20Josh%20Website" target="_top">devangi.dalaal@yahoo.in</a>
                     </div>
                 </div>
             </div>
