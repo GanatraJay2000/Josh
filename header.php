@@ -17,7 +17,7 @@ wp_head();
             <img src="../wp-content/uploads/2020/10/josh-logo.png" alt="JOSH Logo" loading="lazy">Josh Foundation
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controsls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars navbar-toggler-my-icon"></i>
+            <i class="fa fa-bars navbar-toggler-my- icon"></i>
         </button>
         <?php
         wp_nav_menu(array(

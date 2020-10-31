@@ -167,8 +167,10 @@
         }
 
         .slideshow-item .slideshow-text {
-            font-size: 16px;
-            padding: 5px;
+            font-size: 24px !important;
+            padding: 5px !important;
+            width: 100%;
+            text-align:center;
         }
     }
 
@@ -177,7 +179,34 @@
             width: 100%;
             border-radius: 0;
             bottom: 0px;
+            background: #00000055;
+            left:0;
         }
+        .owl-prev button {
+        border: 0;
+        outline: 0;
+        font-size: 30px;
+        position: fixed;
+        transform: translate(0%, -50%);
+        top: 60%;
+        left: 0px;
+        background-color: #00000066 !important;
+        height: 60px;
+        width: 60px;
+    }
+
+    .owl-next button {
+        border: 0;
+        outline: 0;
+        font-size: 30px;
+        position: fixed;
+        transform: translate(0, -50%);
+        top: 60%;
+        right: 0px;
+        background-color: #00000066 !important;
+        height: 60px;
+        width: 60px;
+    }
 
         .slideshow {
             height: 60vh;
