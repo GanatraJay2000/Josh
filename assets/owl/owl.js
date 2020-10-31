@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
 
     $('.banner').owlCarousel({
         loop: true,
-        autoplay: true,
+        autoplay: false,
         items: 1,
         autoplayTimeout: 5000,
         dots: true,
