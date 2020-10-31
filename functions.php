@@ -16,7 +16,8 @@ function website_files()
     wp_enqueue_style('owl-theme-css', get_template_directory_uri() . '/assets/owl/owl_carousel.theme.css', null, '1.0');
     wp_enqueue_style('owl-css', get_template_directory_uri() . '/assets/owl/owl_carousel.css', array('owl-theme-css'), '1.0');
     wp_enqueue_style('owl-support', get_template_directory_uri() . '/assets/owl/owl_support.css', array('owl-css'), '1.0');
-    wp_enqueue_style('css', get_stylesheet_uri(), array('bootstrap-css', 'font-awesome', 'fonts', 'owl-support'), '1.0');
+    wp_enqueue_style('animate-css', get_template_directory_uri() . '/assets/css/animate.css', null, '1.0');
+    wp_enqueue_style('css', get_stylesheet_uri(), array('bootstrap-css', 'font-awesome', 'fonts', 'owl-support', 'animate-css'), '1.0');
 }
 
 add_action('wp_enqueue_scripts', 'website_files');

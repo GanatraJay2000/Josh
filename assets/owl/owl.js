@@ -1,8 +1,6 @@
 jQuery(document).ready(function ($) {
 
     var slideshows = Array.from(document.querySelectorAll('.slideshow'));
-    var carousels = Array.from(document.querySelectorAll('.carousel'));
-    slideshows = slideshows.concat(carousels);
 
     slideshows.forEach(slideshow => {
         slideshow.classList.add("owl-carousel");
@@ -18,49 +16,23 @@ jQuery(document).ready(function ($) {
         nav: true,
         stagePadding: 00,
         margin: 00,
+        animateOut: 'fadeOut',
+        smartSpeed: 1500,
+        animateIn: 'fadeIn',
         navText: [$('.banner-nav .nav-prev'), $('.banner-nav .nav-next')],
         // onInitialized: counter,
         onTranslated: counter,
-    });
-    $('.myslides').owlCarousel({
-        loop: true,
-        autoplay: false,
-        items: 2,
-        autoplayTimeout: 5000,
-        dots: true,
-        nav: true,
-        navText: [$('.myslides-nav .nav-prev'), $('.myslides-nav .nav-next')],
-        onInitialized: counter,
-        onTranslated: counter,
-        responsive: {
-            0: {
-                items: 1,
-                stagePadding: 0,
-                margin: 0,
-            },
-            600: {
-                items: 2,
-                stagePadding: 40,
-                margin: 43,
-            },
-            768: {
-                items: 3,
-                stagePadding: 40,
-                margin: 43,
-            }
-        },
-
     });
     slideshows.forEach(slideshow => {
         var next_button = slideshow.querySelector('.owl-nav .owl-next');
         var prev_button = slideshow.querySelector('.owl-nav .owl-prev');
         var prev_btn = document.createElement('button');
         prev_btn.className = "nav-prev";
-        prev_btn.innerHTML = '<i class=" fa fa-chevron-left"></i>';
+        prev_btn.innerHTML = '<i class=" fa fa-angle-left"></i>';
         prev_button.appendChild(prev_btn);
         var next_btn = document.createElement('button');
         next_btn.className = "nav-next";
-        next_btn.innerHTML = '<i class=" fa fa-chevron-right"></i>';
+        next_btn.innerHTML = '<i class=" fa fa-angle-right"></i>';
         next_button.appendChild(next_btn);
 
         if (slideshow.classList[1] != 'carousel') {
