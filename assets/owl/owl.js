@@ -17,7 +17,6 @@ jQuery(document).ready(function ($) {
         stagePadding: 00,
         margin: 00,
         animateOut: 'fadeOut',
-        smartSpeed: 1500,
         animateIn: 'fadeIn',
         navText: [$('.banner-nav .nav-prev'), $('.banner-nav .nav-next')],
         // onInitialized: counter,
