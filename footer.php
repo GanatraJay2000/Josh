@@ -40,7 +40,7 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.5322849174777!2d72.83603031439958!3d19.084290987083154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9a64a985761%3A0x3b8d639f3436c1bc!2sJOSH%20Foundation!5e0!3m2!1sen!2sin!4v1603980442343!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
-        <div class="back-to-top">
+        <div class="back-to-top" title="Auto Scroll To Top">
             <a href="#"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
         </div>
     </div>
