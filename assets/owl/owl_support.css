@@ -185,27 +185,27 @@
         .owl-prev button {
         border: 0;
         outline: 0;
-        font-size: 30px;
+        font-size: 24px;
         position: fixed;
         transform: translate(0%, -50%);
         top: 60%;
         left: 0px;
         background-color: #00000066 !important;
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
     }
 
     .owl-next button {
         border: 0;
         outline: 0;
-        font-size: 30px;
+        font-size: 24px;
         position: fixed;
         transform: translate(0, -50%);
         top: 60%;
         right: 0px;
         background-color: #00000066 !important;
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
     }
 
         .slideshow {
