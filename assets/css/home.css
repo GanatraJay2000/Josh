@@ -79,6 +79,10 @@ button.red-btn::after{
         flex-direction: row;  
         margin-bottom: 50px;  
     }
+    .blog-info{
+        padding-top:0px;
+        padding-left:0px;
+    }
     .stats .stat h1{    
         font-size: 54px;
     }
@@ -107,7 +111,7 @@ button.red-btn::after{
 }
 .heading{
     width:70%;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
     text-align-last: center;
 }
 }
