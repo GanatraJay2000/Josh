@@ -21,6 +21,9 @@ function website_files()
     if (is_page('home')) {
         wp_enqueue_style('home-css', get_template_directory_uri() . '/assets/css/home.css', array('css'), '1.0');
     }
+    if (is_page('profile')) {
+        wp_enqueue_style('profile-css', get_template_directory_uri() . '/assets/css/profile.css', array('css'), '1.0');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'website_files');
