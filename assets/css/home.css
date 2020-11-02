@@ -3,6 +3,9 @@ p{
     line-height: 145%;
     text-align:justify;
 }
+.heading{
+    margin-top: 50px;
+}
 
 .our-activities{
     display: flex;
