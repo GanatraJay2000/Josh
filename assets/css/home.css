@@ -1,0 +1,113 @@
+p{    
+    font-size: 18px;    
+    line-height: 145%;
+    text-align:justify;
+}
+
+.our-activities{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--light-grey);
+}
+.our-activities>div h2{
+    font-family:"PT Serif ";
+    font-weight:500;
+}
+.our-activities>div p{
+    font-family:"PT Sans";
+    font-size: 16px;
+}
+.our-activities .hearing-aid{
+    width:100%;
+    height:60vh;
+    filter: saturate(140%) hue-rotate(-10deg);
+}
+button.red-btn{
+    background-color: var(--red);
+    color:white;
+    border-radius: 30px;
+    padding:10px 40px;
+    font-family: "PT Serif Bold", serif;
+    font-weight:700;
+    border:0;
+}
+button.red-btn::after{
+    content:'...';
+}
+
+.stats{
+    display: flex;
+    flex-direction:column;    
+}
+
+.stats .stat{
+    background-color: var(--red);
+    padding:30px 50px;    
+    text-align:center;
+    color:white;    
+    margin-bottom:1.5px;    
+}
+.stats .stat:first-child{
+    border:0;
+}
+.stats .stat h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 64px;    
+}
+.stats .stat p{
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 20px;
+    text-align:center;
+}
+
+.latest-blogs{
+    display: flex;    
+    flex-direction: column;
+}
+
+.blog-image{
+    width:100%;
+}
+.blog-info{
+    padding:20px;
+}
+
+@media screen and (min-width:786px){
+    .latest-blogs{
+        display: flex;
+        flex-direction: row;  
+        margin-bottom: 50px;  
+    }
+    .stats .stat h1{    
+        font-size: 54px;
+    }
+    .stats .stat{    
+        border-left:1.5px solid white;
+        flex-basis: 25%;
+    }
+    .stats{        
+        flex-direction:row;    
+    }
+    .our-activities{  
+    margin:70px 0;  
+    flex-direction: row;
+    height:85vh;
+    width:100%;    
+}
+.our-activities>div{
+    flex-basis:60%;
+    width:50%;
+    padding:40px !important;    
+}
+.our-activities .hearing-aid{
+    height:100%;
+    flex-basis:40%;
+    width:50%;
+}
+.heading{
+    width:70%;
+    margin: 0 auto;
+    text-align-last: center;
+}
+}

@@ -205,7 +205,7 @@
     }
 
         .slideshow {
-            height: 65vh !important;
+            height: calc(60vh + 20vw) !important;
             width: 100vw;
         }
     }

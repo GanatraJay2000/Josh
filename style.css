@@ -6,11 +6,14 @@ Author: Jay Ganatra
 /* variables */
 :root{
     --red:#ee120e;
+    --light-grey: #eeeeee;
     --footer-black: #353132;
     --footer-light-black: #4D4D4D;
 }
 /* variables */
-
+*{
+    
+}
 *:not(i) {    
     font-family: "PT Serif", "serif";
 }
