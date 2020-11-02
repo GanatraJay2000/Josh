@@ -45,7 +45,7 @@
                 This apart, JOSH has also organised various functions which honour a "JOSH Star" among the hearing impaired, thus infusing in these children a sense of well-being and self-confidence, while providing the motivation for others to overcome their handicap and do their parents proud.
             </p>
             <p>
-                Lend the deaf a ear. Be a part of <span class="red">MISSION JOSH</span> , and make a difference to their lives.
+                Lend the deaf a ear. Be a part of <span class="red">MISSION JOSH</span>, and make a difference to their lives.
             </p>
         </div>
     </div>

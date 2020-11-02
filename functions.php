@@ -24,6 +24,18 @@ function website_files()
     if (is_page('profile')) {
         wp_enqueue_style('profile-css', get_template_directory_uri() . '/assets/css/profile.css', array('css'), '1.0');
     }
+    if (is_page('founders')) {
+        wp_enqueue_style('founders-css', get_template_directory_uri() . '/assets/css/founders.css', array('css'), '1.0');
+    }
+    if (is_page('josh-activities')) {
+        wp_enqueue_style('josh-activities-css', get_template_directory_uri() . '/assets/css/josh-activities.css', array('css'), '1.0');
+    }
+    if (is_page('josh-stars')) {
+        wp_enqueue_style('josh-stars-css', get_template_directory_uri() . '/assets/css/josh-stars.css', array('css'), '1.0');
+    }
+    if (is_page('gallery')) {
+        wp_enqueue_style('gallery-css', get_template_directory_uri() . '/assets/css/gallery.css', array('css'), '1.0');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'website_files');
