@@ -6,6 +6,7 @@ Author: Jay Ganatra
 /* variables */
 :root{
     --red:#ee120e;
+    --v-light-gray: #F5F5F8;
     --light-grey: #eeeeee;
     --footer-black: #353132;
     --footer-light-black: #4D4D4D;
@@ -28,7 +29,7 @@ html {
 */
 nav.navbar{
     min-height:15vh;
-    background-color: #fff;
+    background-color: #fff;    
 }
 .navbar-brand>img{
     height:45px;
@@ -96,6 +97,99 @@ nav.navbar button.navbar-toggler:active, nav.navbar button.navbar-toggler:focus{
 */
 
 /* Body */
+p{    
+    font-size: 18px;    
+    line-height: 145%;
+    text-align:justify;    
+    margin:0;
+}
+
+.page-banner{    
+    height:45%;
+    width:100%;    
+    background-image: url('../../uploads/2020/11/josh_about_profile_banner-768x256.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-banner::after{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: #00000055;
+}
+.page-banner .page-banner-info{
+    text-align:center;
+    position: relative;
+    z-index: 1;
+}
+.page-banner-heading{
+    color:white;
+    /* font-size:100; */
+    font-size:50;
+    /* font-family: 'PT Sans Bold'; */
+    font-family: 'PT Sans';
+    /* font-weight:700; */
+    font-weight:400;
+    position: relative;
+    text-align: center;
+}
+.page-banner-heading::after{
+    --x:5%;
+    content:'';
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width:calc(100% + calc(2 * var(--x)));
+    height:3px;
+    /* bottom:5px; */
+    bottom:-5px;
+    left:calc(var(--x) * -1);
+}
+.page-banner-sub-heading{
+    color:white;
+    /* font-size:48; */
+    font-size:32;
+    font-family: 'PT Sans';    
+    text-align: center;
+    letter-spacing: 2px;
+    margin-left:5%;
+}
+.page-banner .down-icon{
+    color:white;
+    font-size:36px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    z-index: 1;    
+}
+
+.breadcrumbs{
+    padding:30px;
+}
+.breadcrumbs a{
+    color:var(--red);
+}
+.breadcrumbs a::after{
+    font-family: FontAwesome;
+    content: "\f105";
+    font-size:24px;
+    display: inline-block;
+    color:initial;
+    margin:0 15px;
+}
+.breadcrumbs *{
+display:inline-block;
+font-size:24px;
+text-decoration: none !important;
+}
 
 /* Body */
 
@@ -279,6 +373,22 @@ font-size: 28px;
 */
 
 
+@media screen and (min-width:786px){
+    .page-banner{
+        height:80%;    
+    }
+    .page-banner-heading{    
+        font-size:100;    
+        font-family: 'PT Sans Bold';    
+        font-weight:700;    
+    }
+    .page-banner-heading::after{    
+        bottom:5px;    
+    }
+    .page-banner-sub-heading{   
+        font-size:48;    
+    }
+}
 @media screen and (min-width:1000px){
     .nav-item.contact-us{
         background-color:var(--red);
@@ -354,4 +464,8 @@ font-size: 28px;
         .footer .main .content>div{    
         flex-basis:100% !important;
     }
+    .not-on-phone{
+    display: none;
+}
+
 }
