@@ -112,7 +112,7 @@ p{
 .red-a:hover{        
     color: #cf0300 !important;    
 }
-.red-a::after{
+.read-more::after{
     content:'...';
 }
 button.red-btn{

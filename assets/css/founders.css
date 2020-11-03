@@ -24,7 +24,7 @@
 }
 .profile-photo{
     border-radius: 10px;
-    filter: brightness(130%);
+    /* filter: brightness(130%); */
 }
 .profile-info-container{
     width:100%;
@@ -50,10 +50,22 @@
     border-bottom: 3px solid red;
 }
 
-.tab-content *{
-    font-size: 18px;
+.tab-content u{
+    font-size: 19px !important;
 }
-
+.tab-content .tab-pane:first-child p{
+    font-size: 17px !important;    
+}
+.card-two .tab-content .tab-pane:first-child p{
+    font-size: 17px !important;
+    margin:0;
+    margin-bottom:15px;
+    line-height: 1em;
+}
+.tab-content p .red-a{
+    font-size: 17px !important;
+    line-height: 1em;
+}
 
 
 @media screen and (min-width:1000px){

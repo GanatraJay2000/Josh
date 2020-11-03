@@ -78,7 +78,7 @@
 <div class="profile-cards card-two">
     <div class="d-flex flex-md-row flex-column">
         <div class="text-center">
-            <img class="profile-photo" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/doctor-jayant-gandhi.jpg" alt="">
+            <img class="profile-photo" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/devangi-dalal.jpg" alt="">
         </div>
         <div class="mx-md-4 profile-info-container">
             <ul class="profile-info nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -98,38 +98,37 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-two-info" role="tabpanel" aria-labelledby="pills-two-info-tab">
                     <u>Education</u>
-                    <p>M.S. (ENT),D.O.R.L.,F.C.P.S .</p>
+                    <p>Audiologist & Speech Therepist ( from Nair Hospital )</p>
                     <u>Clinic</u>
-                    <p>Gandhi Nursing Home Santacruz (WEST).</p>
+                    <p>Speech N Sounds Concepts Santacruz ( W )</p>
                     <u>Professional Experience</u>
-                    <p>Consulting ENT surgeon since 30 years.</p>
+                    <p>27 Years Conculting Audiologist & Speech Therepist</p>
+                    <u>Website</u>
+                    <p><a href="https://www.devangidalal.com/" target="_blank" class="red-a">www.devangidalal.com</a></p>
                 </div>
                 <div class="tab-pane fade" id="pills-two-publications" role="tabpanel" aria-labelledby="pills-two-publications-tab">
                     <u>Publication:</u>
                     <p>
-                        They have published and Presented articles in National and International conference written articles in Times of India.
+                        Presented Scientific Paper on "MIDDLE EAR PROBLEMS IN MANAGEMENT OF HEARING IMPAIRED CHILDREN" at NATIONAL CONFERENCE at PATNA.<br>
+                        She has authored a book for the hearing impaired named "CHALO BADHIRONE SAAMBHALTA KARIYE" in Gujarati and "KUCH SUNA AAPNE" in Hindi.
                     </p>
                 </div>
                 <div class="tab-pane fade" id="pills-two-achievements" role="tabpanel" aria-labelledby="pills-two-achievements-tab">
-                    <u> Social Achievements:</u>
+                    <u>Professional Achievements:</u>
                     <p>
-                        Joint Secretary - Shri Vile Parle Kelavani Mandal-Largest Educational trust-Mumbai.<br>
-                        Chairman - SVKM International school.<br>
-                        Mentor - SVKM IB School.<br>
-                        President - Lions Club of Juhu (A premier club of India).<br>
-                        Founder trustee - JOSH (Juvenile Organization of Speech and Hearing impaired.
+                        Presented poster on "KEYS TO SUCCESSFUL MANAGEMENT OF HEARING IMPAIRED CHILDREN IN INDIA" at PAEDIATRIC AUDIOLOGY conference by WIDEX in Amsterdam 2008.<br>
+                        Presented poster on "CUSTOMIZED REHABILITATION A KEY TO SUCCESS IN MANAGEMENT OF HEARING IMPAIRED CHILDREN" at PAEDIATRIC AUDIOLOGY conference by WIDEX in Ottawa 2006.<br>
+                        Attended special training at WIDEX TRAINING CENTER, CHICAGO, U.S.A. Won "BEST PEDIATRIC HEARING AID CENTER IN INDIA" Award in 2007-08 and 2009-10 and 2011-12.
                     </p>
                 </div>
                 <div class="tab-pane fade" id="pills-two-more" role="tabpanel" aria-labelledby="pills-two-more-tab">
-                    <u>Awards Achieved:</u>
+                    <u>Proud Moment:</u>
                     <p>
-                        Gold medal in M. S. (ENT) Mumbai University.<br>
-                        Recipient of Best Hearing Aid center award.
+                        Devangi being awarded the Humanitarian award, 2012 in Boston, USA.
                     </p>
-                    <u>International Training:</u>
+                    <u>Future Plans:</u>
                     <p>
-                        Micro Ear surgery in West Germany.<br>
-                        Nasal endoscopy surgery in Austria.
+                        Devangi has set a goal to establish a highly developed center to coach public speaking and voice modulation to the hearing impaired and give them a specialized voice and speech therapy, to help them unify with society.
                     </p>
                 </div>
             </div>

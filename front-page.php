@@ -68,7 +68,7 @@
     <div class="latest-blogs-container">
         <div class="head  mb-5">
             <h1 class="display-4 text-center">Latest Blogs</h1>
-            <a href="#" class="red-a read-all-blogs">Read all Blogs</a>
+            <a href="#" class="red-a read-more read-all-blogs">Read all Blogs</a>
         </div>
         <div class="latest-blogs">
             <div class="blog mx-0 mx-md-5 mb-xs-4 mb-md-0">
