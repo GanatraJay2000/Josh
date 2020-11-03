@@ -105,6 +105,28 @@ p{
     margin:0;
     margin-bottom:20px;
 }
+.red-a{        
+    color:var(--red);    
+    font-size: 22px;
+}
+.red-a:hover{        
+    color: #cf0300 !important;    
+}
+.red-a::after{
+    content:'...';
+}
+button.red-btn{
+    background-color: var(--red);
+    color:white;
+    border-radius: 30px;
+    padding:10px 40px;
+    font-family: "PT Serif Bold", serif;
+    font-weight:700;
+    border:0;
+}
+button.red-btn::after{
+    content:'...';
+}
 
 .page-banner{    
     height:45%;

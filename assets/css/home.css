@@ -26,18 +26,7 @@ p{
     height:60vh;
     filter: saturate(140%) hue-rotate(-10deg);
 }
-button.red-btn{
-    background-color: var(--red);
-    color:white;
-    border-radius: 30px;
-    padding:10px 40px;
-    font-family: "PT Serif Bold", serif;
-    font-weight:700;
-    border:0;
-}
-button.red-btn::after{
-    content:'...';
-}
+
 
 .stats{
     display: flex;
@@ -68,6 +57,17 @@ button.red-btn::after{
     display: flex;    
     flex-direction: column;
 }
+.head{
+    position: relative;
+        width:100%;
+}
+.read-all-blogs{
+    position: relative;
+    width:100%;
+    display: block;
+    text-align:center;
+    margin:20px auto;
+}
 
 .blog-image{
     width:100%;
@@ -91,6 +91,13 @@ button.red-btn::after{
         flex-direction: row;  
         margin-bottom: 50px;  
     }
+    .read-all-blogs{
+    position: absolute;
+    top:0px;
+    right:60px;
+    text-align: end;
+    width:fit-content;
+}
     .blog-info{        
         padding-left:0px;
     }

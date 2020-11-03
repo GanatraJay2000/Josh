@@ -66,7 +66,10 @@
         </div>
     </div>
     <div class="latest-blogs-container">
-        <h1 class="display-4 text-center mb-5">Latest Blogs</h1>
+        <div class="head  mb-5">
+            <h1 class="display-4 text-center">Latest Blogs</h1>
+            <a href="#" class="red-a read-all-blogs">Read all Blogs</a>
+        </div>
         <div class="latest-blogs">
             <div class="blog mx-0 mx-md-5 mb-xs-4 mb-md-0">
                 <img class="blog-image" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/blog_josh_2-scaled.jpg" alt="Blog Banner">
