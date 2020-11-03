@@ -75,6 +75,15 @@ button.red-btn::after{
 .blog-info{
     padding:20px;
 }
+.latest-blogs .blog-info .date{
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+}
+.latest-blogs .blog-info h3{
+    font-family: "PT Serif Bold", sans-serif;   
+    font-size: 36px; 
+    margin-bottom: 15px;
+}
 
 @media screen and (min-width:786px){
     .latest-blogs{
@@ -82,31 +91,36 @@ button.red-btn::after{
         flex-direction: row;  
         margin-bottom: 50px;  
     }
-    .blog-info{
-        padding-top:0px;
+    .blog-info{        
         padding-left:0px;
     }
     .stats .stat h1{    
         font-size: 54px;
+        line-height:100%;
+        margin:0 !important;
     }
     .stats .stat{    
-        border-left:1.5px solid white;
+        border-left:.5px solid white;
         flex-basis: 25%;
     }
     .stats{        
-        flex-direction:row;    
+        flex-direction:row;   
+        margin:100px 0 !important; 
     }
     .our-activities{  
-    margin:70px 0;  
-    flex-direction: row;
-    height:85vh;
-    width:100%;    
-}
-.our-activities>div{
-    flex-basis:60%;
-    width:50%;
-    padding:40px !important;    
-}
+        margin:70px 0;  
+        flex-direction: row;
+        height:85vh;
+        width:100%;    
+    }
+    .our-activities>div{
+        flex-basis:60%;
+        width:50%;
+        padding:40px !important;    
+    }
+    .our-activities p{  
+        margin-bottom:22px;
+    }
 .our-activities .hearing-aid{
     height:100%;
     flex-basis:40%;
@@ -114,7 +128,15 @@ button.red-btn::after{
 }
 .heading{
     width:70%;
-    margin: 80px auto 0 auto;
+    margin: 120px auto 160px !important;
     text-align-last: center;
 }
+.heading h2{    
+    font-family: "PT Serif Bold";
+    font-weight:900;
+}
+.heading p{    
+    line-height:201%;
+}
+
 }

@@ -100,9 +100,10 @@ nav.navbar button.navbar-toggler:active, nav.navbar button.navbar-toggler:focus{
 /* Body */
 p{    
     font-size: 18px;    
-    line-height: 145%;
+    line-height: 165%;
     text-align:justify;    
     margin:0;
+    margin-bottom:20px;
 }
 
 .page-banner{    
