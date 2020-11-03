@@ -54,10 +54,22 @@
     font-size: 18px;
 }
 
+
+
 @media screen and (min-width:1000px){
 .nav-item{    
     max-width:25%;
 }
+}
+@media screen and (min-width:1400px){
+    .profile-cards{
+        width:60%;
+    }
+}
+@media screen and (min-width:2000px){
+    .profile-cards{
+        width:45%;
+    }
 }
 @media screen and (max-width:600px){
     .card-one{
