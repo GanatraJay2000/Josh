@@ -9,15 +9,17 @@ function website_files()
     wp_enqueue_script('owl-support-js', get_template_directory_uri() . '/assets/owl/owl.js', array('owl-js'), '1.0');
     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery', 'bootstrap-js', 'owl-support-js'), '1.0');
 
-
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css', null, '1.0');
     wp_enqueue_style('font-awesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', null, '1.0');
     wp_enqueue_style('fonts', get_template_directory_uri() . '/assets/css/fonts.css', null, '1.0');
+    wp_enqueue_style('lightbox-css', get_template_directory_uri() . '/assets/css/lightbox.css', null, '1.0');
     wp_enqueue_style('owl-theme-css', get_template_directory_uri() . '/assets/owl/owl_carousel.theme.css', null, '1.0');
     wp_enqueue_style('owl-css', get_template_directory_uri() . '/assets/owl/owl_carousel.css', array('owl-theme-css'), '1.0');
     wp_enqueue_style('owl-support', get_template_directory_uri() . '/assets/owl/owl_support.css', array('owl-css'), '1.0');
     wp_enqueue_style('animate-css', get_template_directory_uri() . '/assets/css/animate.css', null, '1.0');
-    wp_enqueue_style('css', get_stylesheet_uri(), array('bootstrap-css', 'font-awesome', 'fonts', 'owl-support', 'animate-css'), '1.0');
+    wp_enqueue_style('css', get_stylesheet_uri(), array('bootstrap-css', 'font-awesome', 'fonts', 'owl-support', 'animate-css', 'lightbox-css'), '1.0');
+
+
     if (is_page('home')) {
         wp_enqueue_style('home-css', get_template_directory_uri() . '/assets/css/home.css', array('css'), '1.0');
     }

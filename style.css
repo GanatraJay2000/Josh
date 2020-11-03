@@ -166,7 +166,7 @@ button.red-btn::after{
     text-align: center;
 }
 .page-banner-heading::after{
-    --x:5%;
+    --x:0%;
     content:'';
     position: absolute;
     display: block;
@@ -197,6 +197,9 @@ button.red-btn::after{
 
 .breadcrumbs{
     padding:30px;
+}
+.breadcrumbs p{
+    margin:0;
 }
 .breadcrumbs a{
     color:var(--red);
@@ -487,6 +490,9 @@ font-size: 28px;
     .navbar-brand{
         font-size: 35px;
     }
+    .page-banner-heading::after{
+    --x:5%;    
+}
 }
 @media screen and (max-width:600px){
         .footer .main .content>div{    
