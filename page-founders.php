@@ -52,23 +52,29 @@
                 <div class="tab-pane fade" id="pills-one-achievements" role="tabpanel" aria-labelledby="pills-one-achievements-tab">
                     <u> Social Achievements:</u>
                     <p>
-                        Joint Secretary - Shri Vile Parle Kelavani Mandal-Largest Educational trust-Mumbai.<br>
-                        Chairman - SVKM International school.<br>
-                        Mentor - SVKM IB School.<br>
-                        President - Lions Club of Juhu (A premier club of India).<br>
-                        Founder trustee - JOSH (Juvenile Organization of Speech and Hearing impaired.
+                        <ul>
+                            <li>Joint Secretary - Shri Vile Parle Kelavani Mandal-Largest Educational trust-Mumbai.</li>
+                            <li>Chairman - SVKM International school.</li>
+                            <li>Mentor - SVKM IB School.</li>
+                            <li>President - Lions Club of Juhu (A premier club of India).</li>
+                            <li>Founder trustee - JOSH (Juvenile Organization of Speech and Hearing impaired.</li>
+                        </ul>
                     </p>
                 </div>
                 <div class="tab-pane fade" id="pills-one-more" role="tabpanel" aria-labelledby="pills-one-more-tab">
                     <u>Awards Achieved:</u>
                     <p>
-                        Gold medal in M. S. (ENT) Mumbai University.<br>
-                        Recipient of Best Hearing Aid center award.
+                        <ul>
+                            <li>Gold medal in M. S. (ENT) Mumbai University.</li>
+                            <li>Recipient of Best Hearing Aid center award.</li>
+                        </ul>
                     </p>
                     <u>International Training:</u>
                     <p>
-                        Micro Ear surgery in West Germany.<br>
-                        Nasal endoscopy surgery in Austria.
+                        <ul>
+                            <li>Micro Ear surgery in West Germany.</li>
+                            <li>Nasal endoscopy surgery in Austria.</li>
+                        </ul>
                     </p>
                 </div>
             </div>
@@ -109,16 +115,30 @@
                 <div class="tab-pane fade" id="pills-two-publications" role="tabpanel" aria-labelledby="pills-two-publications-tab">
                     <u>Publication:</u>
                     <p>
-                        Presented Scientific Paper on "MIDDLE EAR PROBLEMS IN MANAGEMENT OF HEARING IMPAIRED CHILDREN" at NATIONAL CONFERENCE at PATNA.<br>
-                        She has authored a book for the hearing impaired named "CHALO BADHIRONE SAAMBHALTA KARIYE" in Gujarati and "KUCH SUNA AAPNE" in Hindi.
+                        <ul>
+                            <li>
+                                Presented Scientific Paper on "MIDDLE EAR PROBLEMS IN MANAGEMENT OF HEARING IMPAIRED CHILDREN" at NATIONAL CONFERENCE at PATNA.
+                            </li>
+                            <li>
+                                She has authored a book for the hearing impaired named "CHALO BADHIRONE SAAMBHALTA KARIYE" in Gujarati and "KUCH SUNA AAPNE" in Hindi.
+                            </li>
+                        </ul>
                     </p>
                 </div>
                 <div class="tab-pane fade" id="pills-two-achievements" role="tabpanel" aria-labelledby="pills-two-achievements-tab">
                     <u>Professional Achievements:</u>
                     <p>
-                        Presented poster on "KEYS TO SUCCESSFUL MANAGEMENT OF HEARING IMPAIRED CHILDREN IN INDIA" at PAEDIATRIC AUDIOLOGY conference by WIDEX in Amsterdam 2008.<br>
-                        Presented poster on "CUSTOMIZED REHABILITATION A KEY TO SUCCESS IN MANAGEMENT OF HEARING IMPAIRED CHILDREN" at PAEDIATRIC AUDIOLOGY conference by WIDEX in Ottawa 2006.<br>
-                        Attended special training at WIDEX TRAINING CENTER, CHICAGO, U.S.A. Won "BEST PEDIATRIC HEARING AID CENTER IN INDIA" Award in 2007-08 and 2009-10 and 2011-12.
+                        <ul>
+                            <li>
+                                Presented poster on "KEYS TO SUCCESSFUL MANAGEMENT OF HEARING IMPAIRED CHILDREN IN INDIA" at PAEDIATRIC AUDIOLOGY conference by WIDEX in Amsterdam 2008.
+                            </li>
+                            <li>
+                                Presented poster on "CUSTOMIZED REHABILITATION A KEY TO SUCCESS IN MANAGEMENT OF HEARING IMPAIRED CHILDREN" at PAEDIATRIC AUDIOLOGY conference by WIDEX in Ottawa 2006.
+                            </li>
+                            <li>
+                                Attended special training at WIDEX TRAINING CENTER, CHICAGO, U.S.A. Won "BEST PEDIATRIC HEARING AID CENTER IN INDIA" Award in 2007-08 and 2009-10 and 2011-12.
+                            </li>
+                        </ul>
                     </p>
                 </div>
                 <div class="tab-pane fade" id="pills-two-more" role="tabpanel" aria-labelledby="pills-two-more-tab">

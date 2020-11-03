@@ -54,13 +54,7 @@
     font-size: 19px !important;
 }
 .tab-content .tab-pane:first-child p{
-    font-size: 17px !important;    
-}
-.card-two .tab-content .tab-pane:first-child p{
-    font-size: 17px !important;
-    margin:0;
-    margin-bottom:15px;
-    line-height: 1em;
+    font-size: 17px !important;   
 }
 .tab-content p .red-a{
     font-size: 17px !important;
