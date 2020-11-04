@@ -108,6 +108,7 @@ p{
 .red-a{        
     color:var(--red);    
     font-size: 22px;
+    text-decoration: none;
 }
 .red-a:hover{        
     color: #cf0300 !important;    
