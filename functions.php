@@ -38,6 +38,9 @@ function website_files()
     if (is_page('gallery')) {
         wp_enqueue_style('gallery-css', get_template_directory_uri() . '/assets/css/gallery.css', array('css'), '1.0');
     }
+    if (is_page('press')) {
+        wp_enqueue_style('press-css', get_template_directory_uri() . '/assets/css/press.css', array('css'), '1.0');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'website_files');
