@@ -1,0 +1,53 @@
+        .page-banner {
+            background-image: url("../../../../../uploads/2020/11/josh-testimonials-768x256.jpg");
+            background-position: 40% 50%;
+        }
+        
+        .testimonials {
+            column-count: 1;
+            width: 90%;
+            margin: 50px auto;
+        }
+        
+        .testimonial {
+            background-color: #fdfdfd;
+            border-radius: 10px;
+            padding: 20px !important;
+            margin: 0 0 20px !important;
+        }
+        
+        .testimonial .card-title {
+            margin-bottom: 5px !important;
+            font-size: 26px !important;
+        }
+        
+        .quote {
+            margin-left: 0px;
+            width: 25px;
+        }
+        
+        .testimonial-info {
+            margin: 0px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .page-banner {
+                background-position: 0% 50%;
+            }
+            .testimonials {
+                column-count: 2;
+                width: 70%;
+                margin: 50px auto;
+            }
+            .quote {
+                margin-left: -10px;
+                width: 25px;
+            }
+            .testimonial-info {
+                margin: 0 15px;
+            }
+            .testimonial .card-title {
+                margin-bottom: 5px !important;
+                font-size: 33px !important;
+            }
+        }
