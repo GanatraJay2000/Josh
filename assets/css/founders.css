@@ -25,7 +25,39 @@
 .profile-photo{
     border-radius: 10px;
     /* filter: brightness(130%); */
+    width: 100%;
 }
+.profile-photo-container{
+    position: relative;
+}
+
+.profile-photo-container .names{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;    
+    padding:10px ;
+    background: linear-gradient(#00000000 40%, #00000088 90%);
+    border-radius: 0 0 10px 10px;
+}
+
+.profile-photo-container .names .their-name {
+    font-family: "PT Sans Bold";
+    font-weight: 900;
+    color:white;
+    font-size: 30px;
+}
+
+.profile-photo-container .names .their-post {
+    color:white;
+    font-weight:500;
+    font-size: 18px;
+}
+
 .profile-info-container{
     width:100%;
 }

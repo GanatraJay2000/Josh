@@ -24,6 +24,7 @@
     <div class="row d-flex flex-md-row flex-column">
         <div class="col-lg-6 row-image"></div>
         <div class="col-lg-6 row-info">
+            <div>
             <p>
                 The movement is focused on supporting hearing impaired children, and inspired by the fact that scientific studies reveal that more than 95% of theses handicapped children have some residual hearing, which can be improved with the state-of-the-art medical technologies coupled with rehabilitation program.
             </p>
@@ -36,22 +37,26 @@
             <p>
                 Supported by philantropic donors, NGOs and manufacturers of hearing aids JOSH has been able to provide digital hearing aids to more than 1000+ underprivileged hearing impaired children-while establishing six special schools that provide education in a totally digital format.
             </p>
+            </div>
         </div>
     </div>
     <div class="row d-flex flex-md-row-reverse flex-column">
         <div class="col-lg-6 row-image"></div>
         <div class="col-lg-6 row-info">
+            <div>
             <p>
                 This apart, JOSH has also organised various functions which honour a "JOSH Star" among the hearing impaired, thus infusing in these children a sense of well-being and self-confidence, while providing the motivation for others to overcome their handicap and do their parents proud.
             </p>
             <p>
                 Lend the deaf a ear. Be a part of <span class="red">MISSION JOSH</span>, and make a difference to their lives.
             </p>
+            </div>
         </div>
     </div>
     <div class="row d-flex flex-md-row flex-column">
         <div class="col-lg-6 row-image"></div>
         <div class="col-lg-6 row-info">
+            <div>
             <p>
                 Keeping the above points in mind, we need to come to the main point and that is the course of action for achieving the goal that we have set before us. The most important steps are enlisted below:
             </p>
@@ -76,24 +81,28 @@
                 </li>
             </ol>
         </div>
+        </div>
     </div>
     <div class="row d-flex flex-md-row-reverse flex-column">
         <div class="col-lg-6 row-image"></div>
         <div class="col-lg-6 row-info">
+            <div>
             <h1 class="red">MISSION</h1>
             <p>
                 The movement is focused on supporting hearing impaired children, which can be improved with the state-of-the-art medical technologies coupled with rehabilitation program. With proper care and support all such children can, over a preiod of time, begin to hear well enough to respond to the spoken word and better integrate with society.
             </p>
         </div>
+        </div>
     </div>
     <div class="row d-flex flex-md-row flex-column">
         <div class="col-lg-6 row-image"></div>
         <div class="col-lg-6 row-info">
+            <div>
             <h1 class="red">VISION</h1>
             <p>
                 <i style="font-family:'PT Serif Bold'">"So near and yet so far".</i> This idiom aptly describes the state of affairs related to the rehabilitation of the hearing impaired persons in India. JOSH, dedicated to the task of bringing hearing impaired into the mainstream of the society, wonders why such an easy task is not being accomplished.
             </p>
-
+            </div>
         </div>
     </div>
 </div>

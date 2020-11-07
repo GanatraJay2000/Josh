@@ -47,7 +47,9 @@
 
 .row-info{    
     padding:30px;
-    height:50%;    
+    /* height:50%;     */
+    display: flex;
+    align-items: center;    
 }
 .row-info p{
     font-family: 'PT Sans', sans-serif !important;    

@@ -16,8 +16,16 @@
 </div>
 <div class="profile-cards card-one">
     <div class="d-flex flex-md-row flex-column">
-        <div class="text-center">
+        <div class="text-center col-md-4 p-0">
+            <div class=" profile-photo-container">
             <img class="profile-photo" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/doctor-jayant-gandhi.jpg" alt="">
+            <div class="names">
+                <div>
+                    <div class="their-name">Dr. Jayant Gandhi</div>
+                    <div class="their-post">ENT Surgeon</div>
+                </div>
+            </div>
+            </div>
         </div>
         <div class="mx-md-4 profile-info-container">
             <ul class="profile-info nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -83,8 +91,16 @@
 </div>
 <div class="profile-cards card-two">
     <div class="d-flex flex-md-row flex-column">
-        <div class="text-center">
+        <div class="text-center col-md-4 p-0">
+            <div class="profile-photo-container">
             <img class="profile-photo" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/devangi-dalal.jpg" alt="">
+            <div class="names">
+                <div>
+                    <div class="their-name">Devangi Dalal</div>
+                    <div class="their-post">Audiologist & Speech Therapist</div>
+                </div>
+            </div>
+            </div>
         </div>
         <div class="mx-md-4 profile-info-container">
             <ul class="profile-info nav nav-pills mb-3" id="pills-tab" role="tablist">
