@@ -1,0 +1,86 @@
+    .page-banner {
+        /* http: //localhost/josh/wp-content/uploads/2020/11/contact-josh-foundation.jpg */
+        background-image: url('../../../../../uploads/2020/11/contact-josh-foundation-768x256.jpg');
+        background-position: 40% 50%;
+    }
+    
+    .form-wrapper {
+        width: 90%;
+        margin: 50px auto 100px;
+        text-align: center;
+    }
+    
+    .form-title {
+        font-family: "PT Sans Bold";
+        font-weight: 900;
+        font-size: 50px;
+    }
+    
+    .form-sub-title {
+        font-family: "PT Sans";
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .form {
+        margin-top: 40px;
+    }
+    
+    .form label {
+        color: lightslategrey !important;
+    }
+    
+    .form input,
+    .form textarea {
+        padding: 23px !important;
+        border-color: rgb(203, 210, 218) !important;
+    }
+    
+    .form div.frm_submit {
+        text-align: center;
+    }
+    
+    .form .frm_button_submit {
+        background-color: var(--red) !important;
+        border-color: var(--red) !important;
+        padding: 7px 50px !important;
+        transition: 0.3s !important;
+        font-size: 24px !important;
+        width: 100% !important;
+    }
+    
+    .form .frm_button_submit:hover {
+        color: white !important;
+    }
+    
+    .with_frm_style .frm_required {
+        color: var(--red) !important;
+    }
+    
+    @media screen and (min-width: 360px) {
+        .form-title {
+            font-size: 60px;
+        }
+    }
+    
+    @media screen and (min-width: 500px) {
+        .form-wrapper {
+            width: 70%;
+        }
+        .form .frm_button_submit {
+            width: auto !important;
+        }
+    }
+    
+    @media screen and (min-width: 860px) {
+        .page-banner {
+            background-position: 0% 50%;
+        }
+        .form-wrapper {
+            width: 50%;
+            margin: 0px auto 70px;
+        }
+        .form-title {
+            font-size: 80px;
+        }
+    }
