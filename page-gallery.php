@@ -16,7 +16,7 @@
 <div class="sticky-top gallery-tabs-container bg-white ">
     <ul class="nav mb-3 gallery-tabs " id="pills-tab" role="tablist">   
         <li class="nav-item gallery-tab " role="presentation">
-            <a class="nav-link active  text-dark" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab">Photo gallery</a>
+            <a class="nav-link active  text-dark" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab">Photo Gallery</a>
         </li>
         <li class="nav-item gallery-tab " role="presentation">
             <a class="nav-link text-dark" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab">Web Gallery</a>

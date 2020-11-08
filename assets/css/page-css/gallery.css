@@ -10,7 +10,6 @@
     margin:0 auto;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .gallery-tab{
@@ -141,7 +140,15 @@ background-color: var(--red);
     background-color: #222;
 }
 
-
+@media screen and (max-width:768px)
+{
+    .gallery-tabs{
+        width:96%;
+    }
+    .gallery-tab a{
+        font-size: 16px;
+    }
+}
 
 
 
