@@ -109,6 +109,9 @@
             .popup_close.close{
                 display: block;
             }
+            .outline {
+                display: none;
+            }
         }
         @media screen and (max-width:500px) {
             .modal .popup{                            
