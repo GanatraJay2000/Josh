@@ -44,9 +44,6 @@ function website_files()
     if (is_page('testimonials')) {
         wp_enqueue_style('testimonials-css', get_template_directory_uri() . '/assets/css/page-css/testimonials.css', array('css'), '1.0');
     }
-    if (is_page('contact-us')) {
-        wp_enqueue_style('contact-us-css', get_template_directory_uri() . '/assets/css/page-css/contact-us.css', array('css'), '1.0');
-    }
 }
 
 add_action('wp_enqueue_scripts', 'website_files');
