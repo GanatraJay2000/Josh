@@ -50,6 +50,9 @@ function website_files()
     if (is_home()) {
         wp_enqueue_style('blogs-css', get_template_directory_uri() . '/assets/css/page-css/blogs.css', array('css'), '1.0');
     }
+    if(is_single()){
+        wp_enqueue_style('blog-css', get_template_directory_uri() . '/assets/css/page-css/blog.css', array('css'), '1.0');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'website_files');

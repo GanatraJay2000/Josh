@@ -5,17 +5,17 @@
     
     .blogs {
         width: 96%;
-        margin: 0px auto 70px;
+        margin:  max(15px, 3vw) auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     
     .blog {
-        width:100%;
+        width:90%;
         box-shadow: 1px 1px 5px #00000044;
         border-radius: 3px;
-        margin: 40px 0;
+        margin: max(15px, 3vw) auto;
         display: flex;
         flex-direction: column;
         background-color: #fdfdff !important;
@@ -51,31 +51,42 @@
     }
     
     .blog .read-more {
-        padding: 5px 20px;
+        padding: 5px 30px;
         background-color: var(--red);
         color: white;
         text-decoration: none;
     }
 
     
+@media screen and (min-width: 768px){
+    .blogs {
+        width: 86%;
+        margin-top:0;
+    }
+    
+    .blog {
+        width:45%;
+    }
+    .blog .blog-content{
+        padding:30px;
+    }
+    .blog:first-child{
+        width:95%;
+        flex-direction: row;
+        margin-top:10px;
+    }
+    .blog:first-child .blog-img {
+        width: 55%;
+    }
+    .blog:first-child .blog-img img {
+        height:max(100%, 60vh);
+        border-radius: 3px 0px 0px 3px;
+    }
+    .blog:first-child .blog-content {
+        width: 45%;
+        padding:40px;
+        display: flex;
+        align-items: center;
+    }
+}
 
-
-    @media screen and (min-width: 550px) {
-        .blog{
-            width: 49%;
-        }
-    }
-    @media screen and (min-width: 768px) {
-        .page-banner {
-            background-position: 0% 50%;
-        }
-        .blog{
-            width: 48%;
-        }
-    }
-    @media screen and (min-width: 1000px) {
-        .blogs {
-            margin: 50px auto 70px;
-            width: 45%;
-        }
-    }

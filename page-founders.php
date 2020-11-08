@@ -16,7 +16,7 @@
 </div>
 <div class="profile-cards card-one">
     <div class="d-flex flex-md-row flex-column">
-        <div class="text-center col-md-4 p-0">
+        <div class="text-md-center col-md-3 p-0">
             <div class=" profile-photo-container">
             <img class="profile-photo" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/doctor-jayant-gandhi.jpg" alt="">
             <div class="names">
@@ -91,7 +91,7 @@
 </div>
 <div class="profile-cards card-two">
     <div class="d-flex flex-md-row flex-column">
-        <div class="text-center col-md-4 p-0">
+        <div class="text-md-center col-md-3 p-0">
             <div class="profile-photo-container">
             <img class="profile-photo" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/devangi-dalal.jpg" alt="">
             <div class="names">
