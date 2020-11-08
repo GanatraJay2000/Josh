@@ -20,7 +20,7 @@ function website_files()
     wp_enqueue_style('css', get_stylesheet_uri(), array('bootstrap-css', 'font-awesome', 'fonts', 'owl-support', 'animate-css', 'lightbox-css'), '1.0');
 
 
-    if (is_page('home')) {
+    if (is_front_page()) {
         wp_enqueue_style('home-css', get_template_directory_uri() . '/assets/css/page-css/home.css', array('css'), '1.0');
     }
     if (is_page('profile')) {
@@ -43,6 +43,12 @@ function website_files()
     }
     if (is_page('testimonials')) {
         wp_enqueue_style('testimonials-css', get_template_directory_uri() . '/assets/css/page-css/testimonials.css', array('css'), '1.0');
+    }
+    if (is_page('contact-us')) {
+        wp_enqueue_style('contact-us-css', get_template_directory_uri() . '/assets/css/page-css/contact-us.css', array('css'), '1.0');
+    }
+    if (is_home()) {
+        wp_enqueue_style('blogs-css', get_template_directory_uri() . '/assets/css/page-css/blogs.css', array('css'), '1.0');
     }
 }
 
