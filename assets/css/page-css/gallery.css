@@ -150,6 +150,7 @@ background-color: var(--red);
     }
     .tab-pane .container{
         padding:0;
+        margin:0;
     }
     .tab-pane .wrapper{
         width:100vw;
