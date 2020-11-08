@@ -2,3 +2,148 @@
     background-image: url('../../../../../uploads/2020/11/josh-gallery-768x256.jpg');
     background-position: 0% 50%;
 }
+.gallery-tabs-container{
+    z-index: 1;
+}
+.gallery-tabs{
+    width:70%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.gallery-tab{
+    width:33%;
+    margin:0;
+    text-align:center;
+    position: relative;
+    padding: 30px 20px;
+}
+.gallery-tab a{
+    font-family: "PT Serif Bold" !important;
+}
+.gallery-tab a::after{
+content:"";
+position: absolute;
+bottom:0;
+left:0;
+width:100%;
+height:3px;
+background-color: #666;
+}
+.gallery-tab a.active::after{
+background-color: var(--red);
+}
+
+
+.container {
+    margin: 60px auto 100px;
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    transition: 0.5s;
+}
+
+.wrapper .image {
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+
+.modal-open-image {
+    width: 180px;
+    height: 180px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.modal-open-image .outline{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 2;
+}
+
+.modal-open-image.iframe {
+    width: 400px;
+    height: 200px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.modal-open-image.iframe::before {
+    display: none;
+}
+.modal-open-image.iframe::after {
+    display: none;
+}
+
+.modal-open-image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 5px #00000066 inset;
+    pointer-events: none;
+}
+
+.modal-open-image::after {
+    --r: 10%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(-1 * var(--r));
+    left: calc(-1 * var(--r));
+    width: calc(100% + calc(var(--r) * 2));
+    height: calc(100% + calc(var(--r) * 2));
+    /* background-color: #00000066; */
+    border: 1.5px solid var(--red);
+    pointer-events: none;
+}
+
+.modal-open-image img {
+    object-fit: cover;
+    object-position: 50% 0px;
+}
+.modal-open-image iframe {
+    object-fit: cover;
+    height:100%;
+    width:100%;
+    object-position: 50% 0px;
+}
+
+.open-modal {
+    padding: 10px 30px;
+    background: #fff;
+    border: 1px solid;
+    transition: 0.3s;
+}
+
+.open-modal:hover,
+.open-modal:focus {
+    color: white;
+    background-color: #222;
+}
+
+
+
+
+
+
+

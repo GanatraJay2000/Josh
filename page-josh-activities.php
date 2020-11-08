@@ -116,7 +116,7 @@
 </div>
 <?php get_footer(); ?>
 <script>
-    var body = document.getElementById("activityPreview");
+    var body = document.body;
 
     var images = Array.from(document.querySelectorAll(".open-image .image"));
     if (images.length > 0) {

@@ -5,7 +5,7 @@
 }
 
 body.active {    
-    overflow: hidden;
+    overflow: hidden !important;
 }
         /* Modal */
 .custom-modal {
@@ -21,6 +21,7 @@ body.active {
     pointer-events: none;
     transition: 0.5s;
     overflow: hidden;
+    z-index: 10;
 }
 
 .custom-modal.active {

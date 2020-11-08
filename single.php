@@ -1,25 +1,21 @@
 <?php get_header();while (have_posts()) {?>
     <div class="page-banner">
     <div class="page-banner-info">
-        <h4 class="page-banner-heading" style="font-size:32px;">
+        <h4 class="page-banner-sub-heading d-md-block d-none" style="font-size:32px;">
         Only Indian Audiologist to receive Humanitarian Award by American Academy of Audiology
         </h4>
-        <h5 class="page-banner-sub-heading mt-3">
+        <h5 class="page-banner-sub-heading mt-3 d-block d-md-none">
             Blog
         </h5>
     </div>
     <i class="fa fa-angle-down down-icon not-on-phone animate__animated animate__heartBeat animate__repeat-3 animate__slower animate__delay-2s"></i>
 </div>
 <style>
-    .page-banner-heading {
+    .page-banner-sub-heading {
     width:70%;
     margin: 0 auto;
     font-family: "PT Sans";
     font-weight:300;
-}
-    .page-banner-heading::after {
-    bottom: -10px;
-    height:2px;
 }
 </style>
 <div class="breadcrumbs not-on-phone">
@@ -27,9 +23,9 @@
     <a href="<?php echo site_url('blogs'); ?>">Blogs</a>
     <p>Audiology</p>
 </div>
-<div class="mx-5 mb-5">
-<div class="row">
-<div class="col-md-9 pl-0">
+<div class="mx-md-5 mx-3 mb-5">
+<div class="row d-flex justify-content-between">
+<div class="col-md-8 ml-md-5">
 <?php
     the_post();
     ?>
@@ -48,7 +44,8 @@ Devangi Dalal believes hearing impairment is not a disability. She believes with
 </div>
 <div class="col-md-3">
 <div class="latest-blogs">
-    <div class="latest-blog  mb-4">
+    <h2 class="mb-4">Latest Blogs</h2>
+    <div class="latest-blog  mb-5">
         <div class="img-container">
             <img src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/press_bg.jpg" alt="Latest Blog">
         </div>
