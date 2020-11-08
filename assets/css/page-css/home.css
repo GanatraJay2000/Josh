@@ -117,6 +117,8 @@ p{
     .our-activities{  
         margin:70px 0;  
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         height:85vh;
         width:100%;    
     }
