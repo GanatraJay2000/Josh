@@ -1,0 +1,81 @@
+    .page-banner {
+        background-image: url('../../../../../uploads/2020/11/blog_bg-768x513.jpg');
+        background-position: 0% 0%;
+    }
+    
+    .blogs {
+        width: 96%;
+        margin: 0px auto 70px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .blog {
+        width:100%;
+        box-shadow: 1px 1px 5px #00000044;
+        border-radius: 3px;
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #fdfdff !important;
+    }
+    
+    .blog .blog * {
+        font-family: "PT Sans", sans-serif;
+    }
+    
+    .blog .blog-img {
+        width: 100%;
+    }
+    
+    .blog .blog-img img {
+        width: 100%;
+        height: 50vh;
+        border-radius: 3px 3px 0px 0px;
+    }
+    
+    .blog .blog-content {
+        padding: 15px 15px 20px;
+    }
+    
+    .blog .blog-title {
+        margin: 0px 0 10px;
+        font-size: 24px;
+        line-height: 1.2em;
+    }
+    
+    .blog .blog-info {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    
+    .blog .read-more {
+        padding: 5px 20px;
+        background-color: var(--red);
+        color: white;
+        text-decoration: none;
+    }
+
+    
+
+
+    @media screen and (min-width: 550px) {
+        .blog{
+            width: 49%;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .page-banner {
+            background-position: 0% 50%;
+        }
+        .blog{
+            width: 48%;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .blogs {
+            margin: 50px auto 70px;
+            width: 45%;
+        }
+    }
