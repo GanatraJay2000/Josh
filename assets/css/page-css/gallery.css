@@ -3,7 +3,7 @@
     background-position: 0% 50%;
 }
 .gallery-tabs-container{
-    z-index: 1;
+    z-index: 5;
 }
 .gallery-tabs{
     width:70%;
@@ -17,7 +17,7 @@
     margin:0;
     text-align:center;
     position: relative;
-    padding: 30px 20px;
+    padding: 30px 0px;
 }
 .gallery-tab a{
     font-family: "PT Serif Bold" !important;
@@ -35,9 +35,14 @@ background-color: #666;
 background-color: var(--red);
 }
 
+.tab-content{
+    background-color: var(--v-light-gray);
+}
+
 
 .container {
-    margin: 60px auto 100px;
+    margin: 0px auto 0px;
+    padding:100px 0;
     display: grid;
     place-items: center;
 }
@@ -56,6 +61,8 @@ background-color: var(--red);
     width: 180px;
     height: 180px;
     display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .modal-open-image {
@@ -100,6 +107,7 @@ background-color: var(--red);
     height: 100%;
     box-shadow: 0px 0px 5px #00000066 inset;
     pointer-events: none;
+    z-index: 3;
 }
 
 .modal-open-image::after {
@@ -111,7 +119,7 @@ background-color: var(--red);
     left: calc(-1 * var(--r));
     width: calc(100% + calc(var(--r) * 2));
     height: calc(100% + calc(var(--r) * 2));
-    /* background-color: #00000066; */
+    background-color: #fff;
     border: 1.5px solid var(--red);
     pointer-events: none;
 }
@@ -149,11 +157,12 @@ background-color: var(--red);
         font-size: 16px;
     }
     .tab-pane .container{
-        padding:0;
-        margin: 50px 0;
+        padding:70px 0px;
+        margin: 0px auto;
     }
-    .tab-pane .wrapper{
+    .wrapper.iframes{
         width:100vw;
+        max-width:100%;
     }
 }
 
