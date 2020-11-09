@@ -70,7 +70,7 @@
     .blog .blog-content{
         padding:30px;
     }
-    .blog:first-child{
+    /* .blog:first-child{
         width:95%;
         flex-direction: row;
         margin-top:10px;
@@ -87,6 +87,6 @@
         padding:40px;
         display: flex;
         align-items: center;
-    }
+    } */
 }
 
