@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-evenly;
     width: 90%;
-    margin: 50px auto;
+    margin: 30px auto 10px;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -29,6 +29,8 @@
     font-size: 24px;
     display: block;
     text-decoration: none !important;
+    line-height: 1em;
+    margin-bottom:10px;
 }
 
 .press-card-date {
@@ -54,10 +56,14 @@ a.view-pdf:hover {
 @media screen and (min-width:768px) {
     .press-card {
         flex-basis: 45%;
+        height:160px;   
+        display: flex;
+        justify-content: center;
+        flex-direction: column;   
     }
-    .presss-cards {
+    .press-cards {
         width: 80%;
-        margin-top: 20px;
+        margin: 20px auto 50px;
     }
     .page-banner {
         background-position: 0% 50%;
