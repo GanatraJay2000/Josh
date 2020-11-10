@@ -76,3 +76,40 @@ function register_navwalker()
     require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
 add_action('after_setup_theme', 'register_navwalker');
+
+
+
+
+
+
+
+
+
+// Meta Boxes
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
+
+function your_prefix_register_meta_boxes( $meta_boxes ) {
+    $prefix = '';
+
+    $meta_boxes[] = [
+        'title'      => esc_html__( 'Youtube Videos', 'online-generator' ),
+        'id'         => 'youtube_videos',
+        'post_types' => ['page'],
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields'     => [
+            [
+                'type'    => 'text_list',
+                'id'      => $prefix . 'youtube_video',
+                'name'    => esc_html__( 'youtube_video', 'online-generator' ),
+                'clone'   => true,
+                'options' => [
+                    '' => 'Video Id',
+                ],
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
+}

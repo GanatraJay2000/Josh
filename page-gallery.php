@@ -65,15 +65,25 @@
         <div class="tab-pane fade" id="pills-contact" role="tabpanel">
             <div class="container">
                 <div class="wrapper iframes">
-                    <div class="modal-open-image iframe">
+                    <?php
+                    $field_id = "youtube_video";
+                    $values = rwmb_meta( $field_id );
+                    foreach ( $values as $value ) { ?>
+                        <div class="modal-open-image iframe">
+                        <iframe src="https://www.youtube.com/embed/<?php 
+                            echo $value[0]; 
+                        ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="outline"></div>
+                    </div>
+                        <?php
+                    }
+                    ?>
+                    <!-- <div class="modal-open-image iframe">
 
                         <iframe src="https://www.youtube.com/embed/VJwoSfTOhyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="outline"></div>
                     </div>
-                    <div class="modal-open-image iframe">
-                        <iframe src="https://www.youtube.com/embed/OFBsuEGhQkI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <div class="outline"></div>
-                    </div>
+                    
                     <div class="modal-open-image iframe">
                         <iframe src="https://www.youtube.com/embed/VRJmcxCrAOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="outline"></div>
@@ -81,7 +91,7 @@
                     <div class="modal-open-image iframe">
                         <iframe src="https://www.youtube.com/embed/A2FsgKoGD04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="outline"></div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
