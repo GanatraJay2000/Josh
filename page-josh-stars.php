@@ -14,20 +14,21 @@
     <a href="<?php echo site_url('home'); ?>">Home</a>
     <p>Our Activities - Josh Stars</p>
 </div>
+<?php
+$titles = rwmb_meta('title');
+$dates = rwmb_meta('date');
+$pdfs = rwmb_meta('pdf');
+?>
 <div class="stars-cards">
+    <?php
+    foreach($pdfs as $key=>$pdf){ $pdf = array_values($pdf); ?>
     <div class="star-card">
-        <a href="#" class="star-card-heading red-a">Josh Foundation Dance Competetion Media Coverage</a>
-        <small class="star-card-date">10th Dec 2016 - 2nd Jan 2017</small>
-        <a href="#" class="view-pdf">
+        <a href="#" class="star-card-heading red-a"><?php print_r($titles[$key]); ?></a>
+        <small class="star-card-date"><?php print_r($dates[$key]);   ?></small>
+        <a href="<?php print_r($pdf[0]['url']); ?>" target="_blank" class="view-pdf">
             <i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp; View PDF
         </a>
-    </div>
-    <div class="star-card">
-    <a href="#" class="star-card-heading red-a">Hearing Impairment to Empowerment</a>
-        <small class="star-card-date">Josh Foundation</small>
-        <a href="#" class="view-pdf">
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>&nbsp;&nbsp; View PDF
-        </a>
-    </div>
+    </div>  
+    <?php } ?>  
 </div>
 <?php get_footer(); ?>

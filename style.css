@@ -142,14 +142,16 @@ p {
     content: '...';
 }
 
-button.red-btn {
+.red-btn {
     background-color: var(--red);
-    color: white;
+    color: white !important;
+    cursor: pointer;
     border-radius: 30px;
     padding: 10px 40px;
     font-family: "PT Serif Bold", serif;
     font-weight: 700;
     border: 0;
+    text-decoration: none !important;
 }
 
 button.red-btn::after {

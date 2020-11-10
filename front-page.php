@@ -65,30 +65,41 @@
             <p>Awards Won</p>
         </div>
     </div>
+               
     <div class="latest-blogs-container">
-        <div class="head  mb-5">
+        <div class="head  mb-md-5 mb-3">
             <h1 class="display-4 text-center">Latest Blogs</h1>
-            <a href="#" class="red-a read-more read-all-blogs">Read all Blogs</a>
+            <a href="<?php echo site_url('blogs') ?>" class="red-a read-more read-all-blogs">Read all Blogs</a>
         </div>
         <div class="latest-blogs">
-            <div class="blog mx-0 mx-md-5 mb-xs-4 mb-md-0">
-                <img class="blog-image" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/blog_josh_2-scaled.jpg" alt="Blog Banner">
+        <?php
+            $blogs = new WP_Query(array(
+                'posts_per_page' => 2,
+                'order' => 'DESC',
+                'meta_key' => 'upload_date',
+                'orderby' => 'meta_value_num',
+            ));
+            while ($blogs->have_posts()) {
+                $blogs->the_post();
+                $upload_date = rwmb_meta( 'upload_date' );
+                $banner_image = rwmb_meta('banner_image', array('size' => 'large'));
+            ?> 
+            <div class="blog mb-5">
+                <?php foreach ($banner_image as $image) { ?>
+                    <img class="blog-image" src="<?php echo $image['url'] ?>" alt="" alt="Blog Banner">
+                <?php } ?>
                 <div class="blog-info">
-                    <div class="date">24.10.2020</div>
-                    <h3>Lorem Ipsum Dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non. Numquam quos magni tenetur!</p>
-                    <button class="red-btn">Continue Reading</button>
+                    <div class="date"><?php echo $upload_date; ?></div>
+                    <h3><?php the_title(); ?></h3>
+                    <p>
+                        <?php
+                        echo wp_trim_words(get_the_content(), 20);
+                        ?>
+                    </p>
+                    <a href="<?php the_permalink(); ?>" class="red-btn mt-5">Continue Reading</a>
                 </div>
-            </div>
-            <div class="blog mx-0 mx-md-5 mb-xs-4 mb-md-0">
-                <img class="blog-image" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/blog_josh_2-scaled.jpg" alt="Blog Banner">
-                <div class="blog-info">
-                    <div class="date">24.10.2020</div>
-                    <h3>Lorem Ipsum Dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non. Numquam quos magni tenetur!</p>
-                    <button class="red-btn">Continue Reading</button>
-                </div>
-            </div>
+            </div>            
+            <?php } ?>
         </div>
     </div>
 </div>

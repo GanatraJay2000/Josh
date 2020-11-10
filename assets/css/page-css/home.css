@@ -57,6 +57,9 @@ p{
 .latest-blogs{
     display: flex;    
     flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
 }
 .head{
     position: relative;
@@ -69,12 +72,16 @@ p{
     text-align:center;
     margin:20px auto;
 }
+.blog{
+    width:100%;
+}
 
 .blog-image{
     width:100%;
+    height:350px;
 }
 .blog-info{
-    padding:20px;
+    padding:7px;
 }
 .latest-blogs .blog-info .date{
     font-family: "PT Sans", sans-serif;
@@ -98,6 +105,9 @@ p{
     right:60px;
     text-align: end;
     width:fit-content;
+}
+.blog{
+    width:45%;
 }
     .blog-info{        
         padding-left:0px;

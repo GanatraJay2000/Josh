@@ -87,9 +87,9 @@ add_action('after_setup_theme', 'register_navwalker');
 
 // Meta Boxes
 
-add_filter( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
+add_filter( 'rwmb_meta_boxes', 'your_prefix_register_gallery_boxes' );
 
-function your_prefix_register_meta_boxes( $meta_boxes ) {
+function your_prefix_register_gallery_boxes( $meta_boxes ) {
     $prefix = '';
 
     $meta_boxes[] = [
@@ -107,6 +107,70 @@ function your_prefix_register_meta_boxes( $meta_boxes ) {
                 'options' => [
                     '' => 'Video Id',
                 ],
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
+}
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_register_meta_boxes' );
+
+function your_prefix_register_meta_boxes( $meta_boxes ) {
+    $prefix = '';
+
+    $meta_boxes[] = [
+        'title'      => esc_html__( 'latest_blogs', 'online-generator' ),
+        'id'         => 'latest_blogs',
+        'post_types' => ['post'],
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields'     => [
+            [
+                'type' => 'date',
+                'id'   => $prefix . 'upload_date',
+                'name' => esc_html__( 'upload_date', 'online-generator' ),
+            ],
+            [
+                'type' => 'image',
+                'id'   => $prefix . 'banner_image',
+                'name' => esc_html__( 'banner_image', 'online-generator' ),
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
+}
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_register_pdfs_boxes' );
+
+function your_prefix_register_pdfs_boxes( $meta_boxes ) {
+    $prefix = '';
+
+    $meta_boxes[] = [
+        'title'      => esc_html__( 'pdfs', 'text-domain' ),
+        'id'         => 'pdfs',
+        'post_types' => ['page'],
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields'     => [
+            [
+                'type' => 'text',
+                'id'   => $prefix . 'title',
+                'name' => esc_html__( 'title', 'text-domain' ),
+                'clone' => true,
+            ],
+            [
+                'type' => 'text',
+                'id'   => $prefix . 'date',
+                'name' => esc_html__( 'date', 'text-domain' ),
+                'clone' => true,
+            ],
+            [
+                'type' => 'file',
+                'id'   => $prefix . 'pdf',
+                'name' => esc_html__( 'pdf', 'text-domain' ),
+                'clone' => true,
             ],
         ],
     ];
