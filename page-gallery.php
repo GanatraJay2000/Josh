@@ -78,21 +78,6 @@
                         <?php
                     }
                     ?>
-                    <!-- <div class="modal-open-image iframe">
-
-                        <iframe src="https://www.youtube.com/embed/VJwoSfTOhyM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <div class="outline"></div>
-                    </div>
-                    
-                    <div class="modal-open-image iframe">
-                        <iframe src="https://www.youtube.com/embed/VRJmcxCrAOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <div class="outline"></div>
-                    </div>
-                    <div class="modal-open-image iframe">
-                        <iframe src="https://www.youtube.com/embed/A2FsgKoGD04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <div class="outline"></div>
-                    </div> -->
-
                 </div>
             </div>
         </div>
