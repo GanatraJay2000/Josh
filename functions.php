@@ -1,5 +1,7 @@
 <?php
 
+@ini_set( 'upload_max_size' , '64M' );
+
 // Get the Assets
 function website_files()
 {
