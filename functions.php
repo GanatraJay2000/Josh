@@ -181,3 +181,34 @@ function your_prefix_register_pdfs_boxes( $meta_boxes ) {
 
     return $meta_boxes;
 }
+
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_register_testimonials_boxes' );
+
+function your_prefix_register_testimonials_boxes( $meta_boxes ) {
+    $prefix = '';
+
+    $meta_boxes[] = [
+        'title'      => esc_html__( 'Testimonials', 'online-generator' ),
+        'id'         => 'testimonials',
+        'post_types' => ['page'],
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields'     => [
+            [
+                'type'  => 'text',
+                'id'    => $prefix . 'name',
+                'name'  => esc_html__( 'name', 'online-generator' ),
+                'clone' => true,
+            ],
+            [
+                'type'  => 'textarea',
+                'id'    => $prefix . 'testimonial',
+                'name'  => esc_html__( 'testimonial', 'online-generator' ),
+                'clone' => true,
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
+}
