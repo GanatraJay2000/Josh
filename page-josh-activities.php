@@ -221,7 +221,6 @@ navText: [$('.banner-nav .nav-prev'), $('.banner-nav .nav-next')],
 onTranslated: counter,
 });
 $('.myslides').owlCarousel({
-loop: true,
 autoplay: true,
 items: 2,
 autoplayTimeout: 5000,

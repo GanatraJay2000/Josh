@@ -23,7 +23,6 @@ $('.banner').owlCarousel({
     onTranslated: counter,
 });
 $('.myslides').owlCarousel({
-    loop: true,
     autoplay: true,
     items: 2,
     autoplayTimeout: 5000,
