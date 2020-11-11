@@ -14,13 +14,15 @@
 <div class="blogs ">
 <?php while (have_posts()) {
         the_post();
-        ?>
-        <!-- // 
-        // echo "<br>";
-        //  -->
+        $upload_date = rwmb_meta( 'upload_date' );
+
+    $banner_image = rwmb_meta('banner_image', array('size' => 'large'));
+    $banner_image = array_values($banner_image);
+    $banner_image = $banner_image[0]['url'];
+        ?>        
     <div class="blog">
         <div class="blog-img">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/press_bg.jpg" alt="">
+            <img src="<?php echo $banner_image; ?>" alt="">
         </div>
         <div class="blog-content">
             <div>

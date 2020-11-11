@@ -76,8 +76,6 @@
             $blogs = new WP_Query(array(
                 'posts_per_page' => 2,
                 'order' => 'DESC',
-                'meta_key' => 'upload_date',
-                'orderby' => 'meta_value_num',
             ));
             while ($blogs->have_posts()) {
                 $blogs->the_post();
@@ -88,8 +86,7 @@
                 <?php foreach ($banner_image as $image) { ?>
                     <img class="blog-image" src="<?php echo $image['url'] ?>" alt="" alt="Blog Banner">
                 <?php } ?>
-                <div class="blog-info">
-                    <div class="date"><?php echo $upload_date; ?></div>
+                <div class="blog-info">                    
                     <h3><?php the_title(); ?></h3>
                     <p>
                         <?php
