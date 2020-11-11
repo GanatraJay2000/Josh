@@ -100,19 +100,24 @@
 </div>
 <div class="activity-preview" id="activityPreview">
     <h1 class="activity-heading">Activity Preview</h1>
-    <div class="container">
-        <div class="wrapper">
-            <div class="open-image">
-                <img class="image" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/josh_activities_img1.jpg" alt="beach">
-            </div>
-            <div class="open-image">
-                <img class="image" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/josh_activities_img3.jpg" alt="beach">
-            </div>
-            <div class="open-image">
-                <img class="image" src="<?php echo home_url(); ?>/wp-content/uploads/2020/11/josh_activities_img2.jpg" alt="beach">
-            </div>
-        </div>
-    </div>
+    <?php
+            $folder = "josh_activities_preview";
+            $dirname = "wp-content/uploads/".$folder."/*.jpg";
+            $images = glob($dirname);
+            foreach ($images as $key => $image) {
+                if (preg_match('/[0-9]x[0-9]/', $image))
+                    unset($images[$key]);                               
+            }
+            $images = array_values($images);            
+    ?>
+<div class="myslides carousel ">
+<?php foreach ($images as $image) { ?> 
+    <div class="slideshow-item open-image">
+        <img class="image" src="<?php echo home_url() . '/' . $image; ?>">    
+    </div>     
+    <?php } ?>   
+</div>
+
 </div>
 <?php get_footer(); ?>
 <script>
