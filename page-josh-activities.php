@@ -98,7 +98,7 @@
         </p>
     </div>
 </div>
-<div class="activity-preview" id="activityPreview">
+<div class="activity-preview mb-5" id="activityPreview">
     <h1 class="activity-heading">Activity Preview</h1>
     <?php
             $folder = "josh_activities_preview";

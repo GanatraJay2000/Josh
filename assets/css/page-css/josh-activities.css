@@ -118,6 +118,7 @@
     display: block;
     cursor: pointer;
     position: relative;
+    margin:50px auto 0;
 }
 
 .open-image::before {
