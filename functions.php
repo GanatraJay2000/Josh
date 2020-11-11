@@ -155,21 +155,21 @@ function your_prefix_register_pdfs_boxes( $meta_boxes ) {
         'priority'   => 'high',
         'fields'     => [
             [
-                'type' => 'text',
-                'id'   => $prefix . 'title',
-                'name' => esc_html__( 'title', 'text-domain' ),
+                'type'  => 'text',
+                'id'    => $prefix . 'title',
+                'clone' => true,
+                'name'  => esc_html__( 'Title', 'text-domain' ),
+            ],
+            [
+                'type'  => 'text',
+                'id'    => $prefix . 'date',
+                'name'  => esc_html__( 'Date', 'text-domain' ),
                 'clone' => true,
             ],
             [
-                'type' => 'text',
-                'id'   => $prefix . 'date',
-                'name' => esc_html__( 'date', 'text-domain' ),
-                'clone' => true,
-            ],
-            [
-                'type' => 'file',
-                'id'   => $prefix . 'pdf',
-                'name' => esc_html__( 'pdf', 'text-domain' ),
+                'type'  => 'file',
+                'id'    => $prefix . 'pdf',
+                'name'  => esc_html__( 'PDF', 'text-domain' ),
                 'clone' => true,
             ],
         ],
