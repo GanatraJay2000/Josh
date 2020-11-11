@@ -24,6 +24,7 @@ $('.banner').owlCarousel({
 });
 $('.myslides').owlCarousel({
     autoplay: true,
+    rewind:true,
     items: 2,
     autoplayTimeout: 5000,
     dots: true,
